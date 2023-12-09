@@ -12,12 +12,24 @@ function App() {
 
   useEffect(() => {
     console.log("Anon Aadhaar status: ", anonAadhaar.status);
+    if (anonAadhaar.status === "logged-in") {
+      console.log("Anon Aadhaar pcd: ", anonAadhaar.pcd);
+    }
   }, [anonAadhaar]);
 
   return (
     <div className="App">
       <LogInWithAnonAadhaar/>
-      <p>{anonAadhaar?.status}</p>
+      <div>
+        {anonAadhaar?.status === "logged-in" && (
+          <>
+            <p>✅ Proof is valid</p>
+            <p>Got your Aadhaar Identity Proof</p>
+            <>Welcome anon!</>
+            <AnonAadhaarProof code={JSON.stringify(anonAadhaar.pcd, null, 2)} />
+          </>
+        )}
+      </div>
     </div>
   );
 }
