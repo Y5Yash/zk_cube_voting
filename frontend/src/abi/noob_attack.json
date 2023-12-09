@@ -1,0 +1,102 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_anonAadhaarVerifierAddr",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_noobVotingAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "anonAadhaarVerifierAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "feedback",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[2]",
+				"name": "_pA",
+				"type": "uint256[2]"
+			},
+			{
+				"internalType": "uint256[2][2]",
+				"name": "_pB",
+				"type": "uint256[2][2]"
+			},
+			{
+				"internalType": "uint256[2]",
+				"name": "_pC",
+				"type": "uint256[2]"
+			},
+			{
+				"internalType": "uint256[34]",
+				"name": "_pubSignals",
+				"type": "uint256[34]"
+			}
+		],
+		"name": "deanonimize",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "noobVotingAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "userFeedback",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

@@ -1,0 +1,184 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_semaphoreAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_groupId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_merkleTreeDepth",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_anonAadhaarVerifierAddress",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "anonAadhaarVerifierAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "candidatesTally",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "groupId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "isNullifiedList",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "merkleTreeDepth",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_identityCommitment",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[2]",
+				"name": "_pA",
+				"type": "uint256[2]"
+			},
+			{
+				"internalType": "uint256[2][2]",
+				"name": "_pB",
+				"type": "uint256[2][2]"
+			},
+			{
+				"internalType": "uint256[2]",
+				"name": "_pC",
+				"type": "uint256[2]"
+			},
+			{
+				"internalType": "uint256[34]",
+				"name": "_pubSignals",
+				"type": "uint256[34]"
+			}
+		],
+		"name": "register",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "semaphoreAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_merkleTreeRoot",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_signal",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_nullifierHash",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_externalNullifier",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[8]",
+				"name": "_proof",
+				"type": "uint256[8]"
+			}
+		],
+		"name": "vote",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
