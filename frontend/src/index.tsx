@@ -13,7 +13,7 @@ const app_id = BigInt("0")
 
 root.render(
   <React.StrictMode>
-    <AnonAadhaarProvider _appId={app_id.toString()}>
+    <AnonAadhaarProvider _appId={app_id.toString()} _isWeb={false}>
       <App />
     </AnonAadhaarProvider>
   </React.StrictMode>

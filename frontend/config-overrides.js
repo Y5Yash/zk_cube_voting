@@ -7,6 +7,7 @@ module.exports = function override(config) {
         "path": require.resolve("path-browserify"),
         // "process/browser": require.resolve("process/browser"),
         "fs": false,
+        "os": require.resolve("os-browserify/browser"),
       }) 
    config.resolve.fallback = fallback; 
    config.plugins = (config.plugins || []).concat([ 
